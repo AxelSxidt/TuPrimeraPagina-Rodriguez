@@ -1,0 +1,12 @@
+{% extends "Coder/base.html" %}
+
+{% block contenido %}
+
+    <h1>Bienvenido</h1>
+
+    <button><a href="{% url 'podologo_list' %}">Ver Podologos</a></button>
+    <button><a href="{% url 'podologo_form' %}">Registrar Podologo</a></button>
+    <button><a href="{% url 'paciente_list' %}">Ver Pacientes</a></button>
+    <button><a href="{% url 'paciente_form' %}">Registrar Paciente</a></button>
+
+{% endblock contenido %}

@@ -1,0 +1,15 @@
+{% extends "Coder/base.html" %}
+
+
+{% block contenido %}
+
+    {% for podologo in podologas %} 
+        <ul>
+            <li>
+                {{podologo.nombre}}
+                {{podologo.email}}
+            </li>
+        </ul>
+    {% endfor %}
+
+{% endblock contenido %}

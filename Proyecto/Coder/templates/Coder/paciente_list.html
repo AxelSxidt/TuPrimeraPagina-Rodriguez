@@ -1,0 +1,15 @@
+{% extends "Coder/base.html" %}
+
+
+{% block contenido %}
+
+    {% for paciente in pacientes %} 
+        <ul>
+            <li>
+                {{paciente.nombre}}
+                {{paciente.mail}}
+            </li>
+        </ul>
+    {% endfor %}
+
+{% endblock contenido %}
